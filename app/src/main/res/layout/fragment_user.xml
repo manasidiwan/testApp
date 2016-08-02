@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:id="@+id/username"
+        style="@style/TextStyleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/TextStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:paddingTop="-10dp"
+        android:layout_alignLeft="@+id/username"/>
+
+    <TextView
+        android:id="@+id/email_header"
+        style="@style/TextStyleMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@+id/username"
+        android:text="@string/email_header"/>
+
+    <TextView
+        android:id="@+id/email"
+        style="@style/TextStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/email_header"
+        android:layout_alignBaseline="@+id/email_header"/>
+
+    <TextView
+        android:id="@+id/phone_header"
+        style="@style/TextStyleMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_header"
+        android:layout_alignLeft="@+id/username"
+        android:text="@string/phone_header"/>
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/TextStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/phone_header"
+        android:layout_alignBaseline="@+id/phone_header"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/website_header"
+        style="@style/TextStyleMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_header"
+        android:layout_alignLeft="@+id/username"
+        android:text="@string/website_header"/>
+
+    <TextView
+        android:id="@+id/website"
+        style="@style/TextStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/website_header"
+        android:layout_alignBaseline="@+id/website_header"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/company"
+        style="@style/TextStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/website"/>
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/TextStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/company"/>
+
+</RelativeLayout>
